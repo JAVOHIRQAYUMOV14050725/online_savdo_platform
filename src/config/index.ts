@@ -2,7 +2,7 @@ import { Sequelize } from 'sequelize';
 import Redis from 'ioredis';
 import dotenv from 'dotenv';
 
-dotenv.config(); // .env faylini yuklash
+dotenv.config();
 
 const sequelizeConfig = new Sequelize({
   host: process.env.DB_HOST || 'localhost',
